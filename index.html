@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theCakeManBot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div>
+    <h1>Hello There👋... Want some CAKE?</h1>
+    <img src="Robot.png" height=500 width=500/>
+</div>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "ae3d6a15-9224-4483-a9e9-299bd62f9ebe", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "8b9d920a-8fa9-4bbf-99c4-a367f0c746e4", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+        (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+        "/WatsonAssistantChatEntry.js"
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
